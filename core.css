@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    body > * {
+        border:3px solid black;
+    }
+    
+    body > header, body > footer {
+        background:rgb(204, 98, 199);
+        color:rgb(247, 172, 34);
+        height: 70px;
+        line-height: 70px;
+        text-align:center;
+    
+    }
+    main{
+      background:lightpink;
+    }
+    main > .content {
+        background:coral;
+    }
+    
+    main > aside {
+    background: rgb(46, 182, 175);
+    height: 100%;
+    }
+    
+    main > nav {
+    background:rgb(247, 172, 34);
+    height:100%;
+    font-size: 1.25em;
+    }
+    
+    aside > ul {
+        list-style-type: none;
+    
+    }
+    nav > ul {
+        list-style-type: none;
+    }
+    
+    .deck {
+        background:tomato;
+    }
+    
+    .deck:first-child {
+        border-bottom: 3px solid rgb(247, 172, 34);
+    
+    }
+    
+    .centerWords{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .navAlign {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background: orchid;
+    }
+    
+    a:link {
+        color:rgb(247, 172, 34);
+        background-color: transparent;
+        text-decoration:none;
+    }
+    
+    a:visited {
+        color:rgb(230, 62, 76);
+        background-color: transparent;
+        text-decoration:none;
+    }
+    
+    a:hover {
+        color:blueviolet;
+        background-color: transparent;
+        text-decoration:underline;
+    }
+    
+    a:active{
+        color:rgb(155, 106, 155);
+        background-color: transparent;
+        text-decoration:underline;
+    }
+    
+    ul{
+        line-height:250%;
+    
+    } 
