@@ -4,18 +4,26 @@ main {
     height: calc(100% - 12vh);
 
 }
-
 main > nav {
     order: 1;
 
 }
+main{
+    display: block;
+}
+h2{
+  text-align: center;
+
+}
 button{
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 150px;
     height: 80px;
     background-color:orchid;
     border: solid black 5px;
+    color:rgb(247, 172, 34);
 }
 
 
