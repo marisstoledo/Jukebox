@@ -1,15 +1,16 @@
 var songs = [{HTMLid: 'good 4 u  By Olivia Rodrigo'},{HTMLid: 'Promiscuous  By Nelly Furtado'}, {HTMLid: 'Pretty Boy Swag  By Soulja Boy'}, {HTMLid: 'Jukebox  By Kid Quill'}, {HTMLid: 'Deja Vu  By Post Malone'}];
-
 function renderSong(){
-for (let i=0; i <= 4; i++){
-let songContainer = document.getElementById("Song");
-let div = document.createElement("div");
-songContainer.appendChild(div);
-div.setAttribute('id', songs[i].HTMLid);
-songContainer.addEventListener('click', startApp);
-}}
-
+    let songContainer = document.getElementById("Song");
+    let index = randomize();
+    console.log(index)
+    let song = songs[index].HTMLid;
+    songContainer.textContent = song;
+}
+function randomize() {
+  return Math.floor(Math.random() * (songs.length - 1));
+}
 function startApp(){
-  renderSong();
+  let button = document.getElementById('button');
+  button.addEventListener('click', renderSong);
 }
 startApp();
