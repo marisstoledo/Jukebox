@@ -1,9 +1,15 @@
-var songs = ["good 4 u  By Olivia Rodrigo", "Promiscuous  By Nelly Furtado", "Pretty Boy Swag  By Soulja Boy", "Jukebox  By Kid Quill", "Deja Vu  By Post Malone"]
+var songs = [{HTMLid: 'good 4 u  By Olivia Rodrigo'},{HTMLid: 'Promiscuous  By Nelly Furtado'}, {HTMLid: 'Pretty Boy Swag  By Soulja Boy'}, {HTMLid: 'Jukebox  By Kid Quill'}, {HTMLid: 'Deja Vu  By Post Malone'}];
 
 function renderSong(){
 for (let i=0; i <= 4; i++){
 let songContainer = document.getElementById("Song");
-let p = document.createElement(p);
-songContainer.appendChild(p);
+let div = document.createElement("div");
+songContainer.appendChild(div);
+div.setAttribute('id', songs[i].HTMLid);
+songContainer.addEventListener('click', startApp);
 }}
-renderSong();
+
+function startApp(){
+  renderSong();
+}
+startApp();

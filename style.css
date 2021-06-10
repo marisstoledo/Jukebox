@@ -17,9 +17,7 @@ button{
     background-color:orchid;
     border: solid black 5px;
 }
-h1{
-    position:fixed;
-}
+
 
 main > .content{
     order:2;
@@ -55,6 +53,9 @@ main > .content{
 
 }
 
+header{
+    display:fixed;
+}
 
 main > aside {
     order: 3;
